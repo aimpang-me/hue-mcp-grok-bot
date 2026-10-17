@@ -21,7 +21,7 @@ export function createHandler({ toolList, callTool }) {
         return ok({
           protocolVersion: SUPPORTED.includes(asked) ? asked : SUPPORTED[0],
           capabilities: { tools: {} },
-          serverInfo: { name: "hue-mcp", version: "0.1.0" },
+          serverInfo: { name: "hue-mcp", version: "1.0.0" },
         });
       }
       case "ping": return ok({});
