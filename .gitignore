@@ -1,0 +1,15 @@
+node_modules/
+.env
+*.key
+wrangler.toml
+.dev.vars
+.wrangler/
+.secrets.local
+.env.*
+*.pem
+*.bundle
+*.tgz
+*.log
+.secrets*
+.DS_Store
+.leakscan.local

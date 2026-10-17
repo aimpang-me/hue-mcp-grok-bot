@@ -1,0 +1,17 @@
+# Copy to wrangler.toml (gitignored). No secrets belong in this file: secrets are set with `wrangler secret put <NAME>`
+# (see docs/SELF-HOST.md): HUE_CLIENT_ID, HUE_CLIENT_SECRET, HUE_APP_ID, SIGNING_SECRET
+name = "hue-mcp"
+main = "worker/index.js"
+compatibility_date = "2026-04-01"
+
+# No logs or analytics of users' light data: observability stays off and the code never logs.
+[observability]
+enabled = false
+
+[[durable_objects.bindings]]
+name = "USER_DO"
+class_name = "UserDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["UserDO"]
