@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.png" width="96" alt="Logo"></p>
+
 # hue-mcp
 
 A free, open-source MCP connector for Philips Hue lights. Add it to any MCP client that supports OAuth connectors, sign in with your own Hue account once, and your assistant can list and control your lights, rooms and scenes. It only ever reaches your own bridge.
